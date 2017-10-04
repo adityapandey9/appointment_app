@@ -1,0 +1,17 @@
+page-login{
+    img {
+        width: 50%;
+        height: auto;
+    }
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    @media (min-width: 430px) {
+        img {
+        width: 30%;
+        height: auto;
+    }
+    }
+}

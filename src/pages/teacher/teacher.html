@@ -1,0 +1,16 @@
+<ion-content>
+  <h1 text-center>Teacher</h1>
+<ion-grid padding>
+  <ion-row *ngFor="let item of items" text-center>
+    <ion-col>
+      {{item.teacher}}
+    </ion-col>
+    <ion-col>
+      {{item.visit}}
+    </ion-col>
+    <ion-col>
+      {{item.call}}
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

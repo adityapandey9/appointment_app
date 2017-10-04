@@ -1,0 +1,31 @@
+<ion-content>
+    <button ion-button (click)="goBack()" clear>
+    <ion-icon name="arrow-back" padding-right></ion-icon>
+    Go Back
+  </button>
+    <h1 text-center>Today's Visit</h1>
+    <ion-grid padding>
+        <ion-row text-center>
+            <ion-col>
+                ID
+            </ion-col>
+            <ion-col>
+                DATE
+            </ion-col>
+            <ion-col>
+                CALL
+            </ion-col>
+        </ion-row>
+        <ion-row *ngFor="let item of items" text-center>
+            <ion-col>
+                {{item.id}}
+            </ion-col>
+            <ion-col>
+                {{item.date}}
+            </ion-col>
+            <ion-col>
+                call
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

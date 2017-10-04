@@ -1,17 +1,20 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h1 text-center>Home</h1>
+  <ion-list no-lines padding>
+    <ion-item text-center>
+      <button ion-button (click)="goToMissedVisit()" large>Missed Visit</button>
+    </ion-item>
+    <ion-item text-center>
+      <button ion-button (click)="goToPendingVisit()" large>Pending Visit</button>
+    </ion-item>
+    <ion-item text-center>
+      <button ion-button (click)="openAlert($event)" large>Pending Fees</button>
+    </ion-item>
+    <ion-item text-center>
+      <button ion-button (click)="goToTodayVisit()" large>Today's Visit</button>
+    </ion-item>
+    <ion-item text-center>
+      <button ion-button (click)="openAlert($event)" large>Schedule a Visit</button>
+    </ion-item>
+  </ion-list>
 </ion-content>
